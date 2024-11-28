@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".main_package.ui.WelcomeActivity">
+
+
+
+    <ImageView
+        android:id="@+id/iv_players"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/playersphoto"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/llWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:layout_above="@id/tvTech"
+        android:orientation="horizontal">
+
+        <!-- First TextView for "Welcome to" -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to "
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/white"
+            android:textSize="21sp" />
+
+        <!-- Second TextView for "Kreed!" -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kreed!"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/teal_200"
+            android:textSize="21sp" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tvTech"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Where Sports meets Tech "
+        android:textColor="@color/white50"
+        android:fontFamily="@font/poppins_light"
+        android:layout_marginBottom="@dimen/_25sdp"
+        android:layout_above="@id/createAccount"
+        android:layout_centerHorizontal="true"
+        android:textSize="15sp" />
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/createAccount"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+       android:layout_above="@id/mcvNext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+
+        app:cardBackgroundColor="@color/primary"
+        app:cardCornerRadius="5dp"
+        app:strokeWidth="0dp">
+
+
+        <TextView
+            android:id="@+id/tvNext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/poppins_bold"
+            android:gravity="center"
+            android:text="Create your Account"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+
+
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/mcvNext"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        app:strokeColor="@color/primary"
+        app:cardBackgroundColor="@color/black"
+        app:cardCornerRadius="0dp"
+        app:strokeWidth="1dp">
+
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/poppins_bold"
+            android:gravity="center"
+            android:text="Sign in"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</RelativeLayout>

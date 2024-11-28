@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".main_package.ui.OtpVerificationActivity">
+
+    <ImageView
+        android:id="@+id/ivmainImageOtp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/createimage" />
+
+    <RelativeLayout
+        android:id="@+id/rlDidyou"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="216dp"
+        android:layout_marginEnd="0dp"
+        android:orientation="vertical"
+        android:paddingHorizontal="16dp">
+
+        <!-- 'Did you know?' Section -->
+        <TextView
+            android:id="@+id/tvDidYouKnow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/rounded_green_background"
+            android:elevation="4dp"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:paddingHorizontal="40dp"
+            android:paddingVertical="@dimen/_5sdp"
+            android:text="Did you know?"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+
+        <!-- Quote Section -->
+        <TextView
+            android:id="@+id/tvBadmintonQuote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_black_background"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:paddingVertical="@dimen/_20sdp"
+            android:text="“Badminton is like ballet dancing.
+It requires a lot of control, strength, mind play
+and measured movement”"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlDidyou"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/llWelcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Verify "
+                android:textColor="@color/white"
+                android:textSize="21sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:text="OTP"
+                android:textColor="@color/teal_200"
+                android:textSize="21sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:fontFamily="@font/poppins_regular"
+            android:minLines="2"
+            android:text="Please enter the 6 Digit Verification Code sent to
+your Phone Number"
+            android:textColor="@color/white50"
+            android:textSize="16sp" />
+
+        <com.uditpatidar.kreed.basic.pinview.PinView
+            android:id="@+id/PinView"
+            style="@style/PinWidget.PinView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:cursorVisible="true"
+            android:elevation="@dimen/_2sdp"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:gravity="center_horizontal"
+            android:inputType="number"
+            android:itemBackground="@drawable/selector_background_color"
+            android:textColor="@color/primary"
+            app:cursorWidth="2dp"
+            app:hideLineWhenFilled="false"
+            app:itemCount="6"
+            app:itemHeight="52dp"
+            app:itemRadius="@dimen/_5sdp"
+            app:itemSpacing="@dimen/_4sdp"
+            app:itemWidth="@dimen/_42sdp"
+            app:lineColor="@drawable/selector_line_color"
+            app:lineWidth="1dp"
+            app:viewType="rectangle"
+            tools:ignore="MissingClass" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/tvErrorPin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Invalid name. Please try again."
+                android:textColor="#FF0000"
+                android:textSize="12sp"
+                android:includeFontPadding="false"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Not Received the Code? "
+                android:textColor="@color/white50"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/tvResendCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Resend Code"
+                android:textColor="@color/teal_200"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/McvSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_above="@id/mcvNext"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            app:cardBackgroundColor="@color/primary"
+            app:cardCornerRadius="5dp"
+            app:strokeWidth="0dp">
+
+
+            <TextView
+                android:id="@+id/tvNext"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/poppins_bold"
+                android:gravity="center"
+                android:text="Sign in"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

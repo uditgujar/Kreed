@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Kreed" parent="Theme.Material3.DayNight.NoActionBar">
+       <item name="colorPrimary">@color/primary</item> -->
+
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowBackground">@color/black</item> <!-- Use this for setting background color -->
+
+    </style>
+
+    <style name="Theme.Kreed" parent="Base.Theme.Kreed" />
+</resources>

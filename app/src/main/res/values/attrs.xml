@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LoadingButton">
+        <attr name="enableShrink" format="boolean" />
+        <attr name="enableRestore" format="boolean" />
+        <attr name="disableClickOnLoading" format="boolean" />
+        <attr name="shrinkDuration" format="integer" />
+        <attr name="shrinkShape" format="enum">
+            <enum name="Default" value="0" />
+            <enum name="Oval" value="1" />
+        </attr>
+        <attr name="loadingEndDrawableSize" format="dimension" />
+        <attr name="loadingDrawableColor" format="color" />
+        <attr name="loadingDrawablePosition" format="enum">
+            <enum name="Start" value="0" />
+            <enum name="Top" value="1" />
+            <enum name="End" value="2" />
+            <enum name="Bottom" value="3" />
+        </attr>
+        <attr name="endSuccessDrawable" format="reference" />
+        <attr name="endFailDrawable" format="reference" />
+        <attr name="endDrawableAppearTime" format="integer" />
+        <attr name="endDrawableDuration" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="DrawableTextView">
+        <attr name="radius" format="dimension" />
+        <attr name="enableCenterDrawables" format="boolean" />
+        <attr name="enableTextInCenter" format="boolean" />
+        <attr name="drawableStartWidth" format="dimension" />
+        <attr name="drawableStartHeight" format="dimension" />
+        <attr name="drawableTopWidth" format="dimension" />
+        <attr name="drawableTopHeight" format="dimension" />
+        <attr name="drawableEndWidth" format="dimension" />
+        <attr name="drawableEndHeight" format="dimension" />
+        <attr name="drawableBottomWidth" format="dimension" />
+        <attr name="drawableBottomHeight" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="CropImageView">
+        <attr name="cropGuidelines">
+            <enum name="off" value="0" />
+            <enum name="onTouch" value="1" />
+            <enum name="on" value="2" />
+        </attr>
+        <attr name="cropScaleType">
+            <enum name="fitCenter" value="0" />
+            <enum name="center" value="1" />
+            <enum name="centerCrop" value="2" />
+            <enum name="centerInside" value="3" />
+        </attr>
+        <attr name="cropShape">
+            <enum name="rectangle" value="0" />
+            <enum name="oval" value="1" />
+        </attr>
+        <attr name="cropAutoZoomEnabled" format="boolean" />
+        <attr name="cropMaxZoom" format="integer" />
+        <attr name="cropMultiTouchEnabled" format="boolean" />
+        <attr name="cropFixAspectRatio" format="boolean" />
+        <attr name="cropAspectRatioX" format="integer" />
+        <attr name="cropAspectRatioY" format="integer" />
+        <attr name="cropInitialCropWindowPaddingRatio" format="float" />
+        <attr name="cropBorderLineThickness" format="dimension" />
+        <attr name="cropBorderLineColor" format="color" />
+        <attr name="cropBorderCornerThickness" format="dimension" />
+        <attr name="cropBorderCornerOffset" format="dimension" />
+        <attr name="cropBorderCornerLength" format="dimension" />
+        <attr name="cropBorderCornerColor" format="color" />
+        <attr name="cropGuidelinesThickness" format="dimension" />
+        <attr name="cropGuidelinesColor" format="color" />
+        <attr name="cropBackgroundColor" format="color" />
+        <attr name="cropSnapRadius" format="dimension" />
+        <attr name="cropTouchRadius" format="dimension" />
+        <attr name="cropSaveBitmapToInstanceState" format="boolean" />
+        <attr name="cropShowCropOverlay" format="boolean" />
+        <attr name="cropShowProgressBar" format="boolean" />
+        <attr name="cropMinCropWindowWidth" format="dimension" />
+        <attr name="cropMinCropWindowHeight" format="dimension" />
+        <attr name="cropMinCropResultWidthPX" format="float" />
+        <attr name="cropMinCropResultHeightPX" format="float" />
+        <attr name="cropMaxCropResultWidthPX" format="float" />
+        <attr name="cropMaxCropResultHeightPX" format="float" />
+        <attr name="cropFlipHorizontally" format="boolean" />
+        <attr name="cropFlipVertically" format="boolean" />
+    </declare-styleable>
+
+
+
+    <declare-styleable name="CircularProgressButton">
+        <attr name="spinning_bar_width" format="dimension" />
+        <attr name="spinning_bar_color" format="color" />
+        <attr name="spinning_bar_padding" format="dimension" />
+        <attr name="initialCornerAngle" format="dimension" />
+        <attr name="finalCornerAngle" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="ReadMoreTextView">
+        <attr name="readMoreMaxLine" format="integer" />
+        <attr name="readMoreText" format="string|reference" />
+        <attr name="readLessText" format="string|reference" />
+        <attr name="readMoreColor" format="color|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="WheelPicker">
+        <attr name="wheel_data" format="reference"/>
+        <attr name="wheel_selected_item_position" format="integer"/>
+        <attr name="wheel_item_text_size" format="dimension"/>
+        <attr name="wheel_item_text_color" format="color"/>
+        <attr name="wheel_selected_item_text_color" format="color"/>
+        <attr name="wheel_same_width" format="boolean"/>
+        <attr name="wheel_maximum_width_text" format="string"/>
+        <attr name="wheel_maximum_width_text_position" format="integer"/>
+        <attr name="wheel_visible_item_count" format="integer"/>
+        <attr name="wheel_item_space" format="dimension"/>
+        <attr name="wheel_cyclic" format="boolean"/>
+        <attr name="wheel_indicator" format="boolean"/>
+        <attr name="wheel_indicator_color" format="color"/>
+        <attr name="wheel_indicator_size" format="dimension"/>
+        <attr name="wheel_curtain" format="boolean"/>
+        <attr name="wheel_curtain_color" format="color"/>
+        <attr name="wheel_atmospheric" format="boolean"/>
+        <attr name="wheel_curved" format="boolean"/>
+        <attr name="wheel_item_align" format="enum">
+            <enum name="center" value="0"/>
+            <enum name="left" value="1"/>
+            <enum name="right" value="2"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="SingleDateAndTimePicker">
+        <attr name="picker_todayText" format="string"/>
+        <attr name="picker_textColor" format="color"/>
+        <attr name="picker_selectedTextColor" format="color"/>
+        <attr name="picker_textSize" format="dimension"/>
+        <attr name="picker_curved" format="boolean"/>
+        <attr name="picker_curvedMaxAngle" format="integer"/>
+        <attr name="picker_cyclic" format="boolean"/>
+        <attr name="picker_mustBeOnFuture" format="boolean"/>
+        <attr name="picker_itemSpacing" format="dimension"/>
+        <attr name="picker_visibleItemCount" format="integer"/>
+        <attr name="picker_selectorColor" format="color"/>
+        <attr name="picker_selectorHeight" format="dimension"/>
+        <attr name="picker_displayMonth" format="boolean"/>
+        <attr name="picker_displayYears" format="boolean"/>
+        <attr name="picker_displayDays" format="boolean"/>
+        <attr name="picker_displayDaysOfMonth" format="boolean" />
+        <attr name="picker_displayMinutes" format="boolean"/>
+        <attr name="picker_displayHours" format="boolean"/>
+        <attr name="picker_displayMonthNumbers" format="boolean" />
+        <attr name="picker_dayCount" format="integer" />
+        <attr name="picker_stepSizeMinutes" format="integer" />
+        <attr name="picker_stepSizeHours" format="integer" />
+        <attr name="picker_monthFormat" format="string"/>
+        <attr name="picker_textAlign" format="enum">
+            <enum name="center" value="0"/>
+            <enum name="left" value="1"/>
+            <enum name="right" value="2"/>
+        </attr>
+        <attr name="android:fontFamily"/>
+        <attr name="fontFamily"/>
+    </declare-styleable>
+    <declare-styleable name="TagsEditText">
+        <attr name="allowSpaceInTag" format="boolean"/>
+        <attr name="useEnterToAddTag" format="boolean"/>
+        <attr name="tagsTextColor" format="color"/>
+        <attr name="tagsTextSize" format="dimension"/>
+        <attr name="tagsBackground" format="integer"/>
+        <attr name="tagsCloseImageLeft" format="integer"/>
+        <attr name="tagsCloseImageRight" format="integer"/>
+        <attr name="tagsCloseImagePadding" format="dimension" />
+        <attr name="tagsPaddingLeft" format="dimension"/>
+        <attr name="tagsPaddingRight" format="dimension"/>
+        <attr name="tagsPaddingTop" format="dimension"/>
+        <attr name="tagsPaddingBottom" format="dimension"/>
+    </declare-styleable>
+
+    <attr name="scrollingPagerIndicatorStyle"/>
+
+    <declare-styleable name="ScrollingPagerIndicator">
+        <attr name="spi_dotColor" format="color" />
+        <attr name="spi_dotSelectedColor" format="color" />
+        <attr name="spi_dotSize" format="dimension" />
+        <attr name="spi_dotSelectedSize" format="dimension" />
+        <attr name="spi_dotMinimumSize" format="dimension" />
+        <attr name="spi_dotSpacing" format="dimension" />
+        <attr name="spi_visibleDotCount" format="integer" />
+        <attr name="spi_visibleDotThreshold" format="integer" />
+        <attr name="spi_looped" format="boolean" />
+        <attr name="spi_orientation" format="enum">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+        <attr name="spi_firstDotDrawable" format="reference" />
+        <attr name="spi_lastDotDrawable" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="DragScaleCircleView">
+        <attr name="hasGuideLine" format="boolean" />
+        <attr name="guideLineSize" format="float" />
+        <attr name="guideLineColor" format="integer" />
+        <attr name="borderSize" format="float" />
+        <attr name="borderColor" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="ZoomageView">
+        <attr name="zoomage_zoomable" format="boolean" />
+        <attr name="zoomage_translatable" format="boolean" />
+        <attr name="zoomage_restrictBounds" format="boolean" />
+        <attr name="zoomage_animateOnReset" format="boolean" />
+        <attr name="zoomage_doubleTapToZoom" format="boolean" />
+        <attr name="zoomage_doubleTapToZoomScaleFactor" format="float" />
+        <attr name="zoomage_autoCenter" format="boolean" />
+        <attr name="zoomage_minScale" format="float" />
+        <attr name="zoomage_maxScale" format="float" />
+        <attr name="zoomage_autoResetMode" format="enum">
+            <enum name="UNDER" value="0" />
+            <enum name="OVER" value="1" />
+            <enum name="ALWAYS" value="2" />
+            <enum name="NEVER" value="3" />
+        </attr>
+    </declare-styleable>
+
+
+    <dimen name="pv_pin_view_cursor_width">2dp</dimen>
+    <dimen name="pv_pin_view_item_line_width">2dp</dimen>
+    <dimen name="pv_pin_view_item_radius">5dp</dimen>
+    <dimen name="pv_pin_view_item_size">48dp</dimen>
+    <dimen name="pv_pin_view_item_spacing">5dp</dimen>
+    <style name="PinWidget"/>
+    <style name="PinWidget.PinView" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@null</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textCursorDrawable">@drawable/pv_invisible_image</item>
+        <item name="android:textSelectHandle">@drawable/pv_invisible_image</item>
+        <item name="android:textSelectHandleLeft">@drawable/pv_invisible_image</item>
+        <item name="android:textSelectHandleRight">@drawable/pv_invisible_image</item>
+    </style>
+    <declare-styleable name="PinView">
+        <attr format="integer" name="itemCount"/>
+        <attr format="dimension" name="itemWidth"/>
+        <attr format="dimension" name="itemHeight"/>
+        <attr format="dimension" name="itemRadius"/>
+        <attr format="dimension" name="itemSpacing"/>
+        <attr format="dimension" name="lineWidth"/>
+        <attr format="reference|color" name="lineColor"/>
+        <attr format="enum" name="viewType">
+            <enum name="rectangle" value="0"/>
+            <enum name="line" value="1"/>
+            <enum name="none" value="2"/>
+        </attr>
+        <attr name="android:cursorVisible"/>
+        <attr format="dimension" name="cursorWidth"/>
+        <attr format="reference|color" name="cursorColor"/>
+        <attr name="android:itemBackground"/>
+        <attr format="boolean" name="hideLineWhenFilled"/>
+    </declare-styleable>
+    <declare-styleable name="PinViewTheme">
+        <attr format="reference" name="pinViewStyle"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main_package.ui.LogInActivity">
+
+    <ImageView
+        android:id="@+id/ivmainImageOtp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/createimage"/>
+
+    <RelativeLayout
+        android:id="@+id/rlDidyou"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="216dp"
+        android:layout_marginEnd="0dp"
+        android:orientation="vertical"
+        android:paddingHorizontal="16dp">
+
+        <!-- 'Did you know?' Section -->
+        <TextView
+            android:id="@+id/tvDidYouKnow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/rounded_green_background"
+            android:elevation="4dp"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:paddingHorizontal="40dp"
+            android:paddingVertical="@dimen/_5sdp"
+            android:text="Did you know?"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+
+        <!-- Quote Section -->
+        <TextView
+            android:id="@+id/tvBadmintonQuote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/rounded_black_background"
+            android:gravity="center"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:paddingVertical="@dimen/_20sdp"
+            android:text="“The art of badminton is to deceive, Those who play badminton well take decisions quickly.”"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:layout_below="@id/rlDidyou"
+        >
+
+        <LinearLayout
+            android:id="@+id/llWelcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="horizontal">
+
+            <!-- First TextView for "Welcome to" -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome back !  "
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/white"
+                android:textSize="21sp" />
+
+            <!-- Second TextView for "Kreed!" -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Champ"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/teal_200"
+                android:textSize="21sp" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Your Email Address"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#606060"
+            android:singleLine="true"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/edit_text_selector"
+            android:paddingVertical="@dimen/_14sdp"
+            android:paddingHorizontal="@dimen/_10sdp"
+            />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                >
+                <TextView
+                    android:id="@+id/tvErrorEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Invalid name. Please try again."
+                    android:textColor="#FF0000"
+                    android:textSize="12sp"
+                    android:includeFontPadding="false"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:buttonTint="@color/primary"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="Remember me"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/mcvRequestOtp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            app:cardBackgroundColor="@color/primary"
+            app:cardCornerRadius="5dp"
+            app:strokeWidth="0dp">
+
+
+
+            <TextView
+                android:id="@+id/tvNext"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/poppins_bold"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="Request OTP"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+
+
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Or use"
+            android:textSize="17sp"
+            android:layout_marginTop="@dimen/_10sdp"
+           android:textColor="@color/white50"
+            android:gravity="center"/>
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingVertical="@dimen/_20sdp"
+             android:paddingHorizontal="@dimen/_30sdp"
+            >
+
+            <!-- Facebook Button -->
+            <LinearLayout
+                android:id="@+id/facebookButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                >
+
+                <ImageView
+                    android:id="@+id/ivFacebookLogo"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:src="@drawable/ic_facebook"
+                    android:layout_gravity="center"
+
+                    android:contentDescription="Facebook logo" />
+
+                <TextView
+                    android:id="@+id/tvFacebook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="Facebook"
+                    android:layout_gravity="center"
+                    android:includeFontPadding="false"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+            <!-- Google Button -->
+            <LinearLayout
+                android:id="@+id/googleButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="end"
+               android:layout_gravity="center"
+                >
+
+                <ImageView
+                    android:id="@+id/ivGoogleLogo"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:layout_gravity="center"
+
+                    android:src="@drawable/ic_google"
+                    android:contentDescription="Google logo" />
+
+                <TextView
+                    android:id="@+id/tvGoogle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="Google"
+                    android:layout_gravity="center"
+                    android:includeFontPadding="false"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textSize="18sp"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"
+ android:id="@+id/llDontHaveAccount"
+            android:orientation="horizontal">
+
+            <!-- First TextView for "Welcome to" -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Don’t have an Account? "
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <!-- Second TextView for "Kreed!" -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create one"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:textColor="@color/teal_200"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

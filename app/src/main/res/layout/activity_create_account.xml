@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".main_package.ui.CreateAccountActivity">
+
+
+
+
+
+<ImageView
+    android:id="@+id/ivmainImage"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scaleType="centerCrop"
+    android:src="@drawable/createimage"/>
+
+
+    <ImageView
+        android:id="@+id/ivWinner"
+        android:layout_width="@dimen/_300sdp"
+        android:layout_height="@dimen/_171sdp"
+
+        android:layout_alignBottom="@+id/ivmainImage"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="-47dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/winnerimage" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/ivWinner"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+
+        android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:id="@+id/tvCreateAccount"
+android:layout_marginTop="@dimen/_20sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <!-- First TextView for "Welcome to" -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create your "
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/white"
+            android:textSize="21sp" />
+
+        <!-- Second TextView for "Kreed!" -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Account"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/teal_200"
+            android:textSize="21sp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:singleLine="true"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#606060"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/edit_text_selector"
+        android:paddingVertical="@dimen/_14sdp"
+        android:paddingHorizontal="@dimen/_10sdp"
+         />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_3sdp"
+
+            >
+            <TextView
+                android:id="@+id/tvErrorName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Invalid name. Please try again."
+                android:textColor="#FF0000"
+                android:textSize="12sp"
+                android:includeFontPadding="false"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email Address"
+            android:textColor="#FFFFFF"
+            android:singleLine="true"
+            android:textColorHint="#606060"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:background="@drawable/edit_text_selector"
+            android:paddingVertical="@dimen/_14sdp"
+            android:paddingHorizontal="@dimen/_10sdp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_3sdp"
+
+            >
+            <TextView
+                android:id="@+id/tvErrorEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Invalid name. Please try again."
+                android:textColor="#FF0000"
+                android:textSize="12sp"
+                android:includeFontPadding="false"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_phoneNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone Number"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#606060"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:singleLine="true"
+            android:background="@drawable/edit_text_selector"
+            android:paddingVertical="@dimen/_14sdp"
+            android:paddingHorizontal="@dimen/_10sdp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_3sdp"
+            >
+            <TextView
+                android:id="@+id/tvErrorPhoneNum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Invalid name. Please try again."
+                android:textColor="#FF0000"
+
+                android:textSize="12sp"
+                android:includeFontPadding="false"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/McvCreateAccount"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            app:cardBackgroundColor="@color/primary"
+            app:cardCornerRadius="5dp"
+            app:strokeWidth="0dp">
+
+
+            <TextView
+                android:id="@+id/tvNext"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/poppins_bold"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="Create your Account"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+
+
+
+
+        </com.google.android.material.card.MaterialCardView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"
+
+            android:orientation="horizontal">
+
+            <!-- First TextView for "Welcome to" -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already have an Account? "
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <!-- Second TextView for "Kreed!" -->
+            <TextView
+                android:id="@+id/tvSignin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign in"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:textColor="@color/teal_200"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

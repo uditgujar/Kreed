@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".main_package.ui.OnboardingActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/llViewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPager"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/dotsLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/mcvNext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/_150sdp"
+        android:orientation="horizontal"
+
+        />
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/mcvNext"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+
+        app:cardBackgroundColor="@color/primary"
+        app:cardCornerRadius="5dp"
+        app:strokeWidth="0dp">
+
+
+        <TextView
+            android:id="@+id/tvNext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/poppins_bold"
+            android:gravity="center"
+            android:text="Next"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/mcvGetStarted"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_40sdp"
+        android:visibility="gone"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/_25sdp"
+        app:strokeWidth="0dp">
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/tvSkip"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_37sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        app:cardBackgroundColor="@color/primary"
+        app:cardCornerRadius="@dimen/_2sdp"
+        app:strokeWidth="0dp">
+
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+
+            android:text="Skip"
+
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</RelativeLayout>

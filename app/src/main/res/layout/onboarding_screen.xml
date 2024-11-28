@@ -1,0 +1,38 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/onboardingContainer">
+
+    <ImageView
+        android:id="@+id/image_onboarding"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_450sdp"
+       android:scaleType="centerCrop"
+        android:src="@drawable/illustration1"
+        />
+
+    <TextView
+        android:id="@+id/title_onboarding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_semi_bold"
+        android:textColor="@color/white"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/description_onboarding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:textColor="@color/white50"/>
+</LinearLayout>
